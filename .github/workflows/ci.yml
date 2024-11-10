@@ -9,7 +9,7 @@ on:
       - "*.md"
       - "data_cache.json"
       - "watchlist.json"
-      - "./pages/*"
+      - "pages/*"
   pull_request:
     branches:
       - "**"
@@ -19,7 +19,7 @@ on:
       - "*.md"
       - "data_cache.json"
       - "watchlist.json"
-      - "./pages/*"
+      - "pages/*"
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref_name }}-${{ github.ref_name == 'main' && github.sha || 'anysha' }}

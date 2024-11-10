@@ -151,6 +151,7 @@ export default function Landing() {
     rssSectionRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
+  const basePath = process.env.NODE_ENV === "production" ? "VBT/" : "";
   return (
     <div className="min-h-screen bg-gray-900 text-white relative overflow-hidden">
       {/* Floating Background */}
@@ -159,7 +160,7 @@ export default function Landing() {
         {floatingImages.map((img, index) => (
           <FloatingImage
             key={index}
-            src={img}
+            src={`${basePath}img`}
             position={imagePositions[index] || { left: 0, top: 0 }}
             index={index}
           />
