@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/05943d5e-5059-40ab-acdf-262fa47f970f)# VBT
+# VBT
 [![Weekly Run](https://github.com/Irilith/VBT/actions/workflows/daily.yml/badge.svg)](https://github.com/Irilith/VBT/actions/workflows/daily.yml)
 [![CI](https://github.com/Irilith/VBT/actions/workflows/ci.yml/badge.svg)](https://github.com/Irilith/VBT/actions/workflows/ci.yml)
 [![Pages](https://github.com/Irilith/VBT/actions/workflows/nextjs.yml/badge.svg?branch=main)](https://github.com/Irilith/VBT/actions/workflows/nextjs.yml)
