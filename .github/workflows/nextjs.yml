@@ -8,6 +8,7 @@ on:
       - ".github/workflows/*"
       - "*.md"
       - "*.rs"
+      - "Cargo.lock"
       - "*.toml"
       - "data_cache.json"
       - "watchlist.json"
