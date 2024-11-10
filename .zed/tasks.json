@@ -1,0 +1,44 @@
+[
+  {
+    "label": "Run Pages (dev)",
+    "command": "cd pages && bun run dev",
+    "use_new_terminal": false,
+    "allow_concurrent_runs": false,
+    "reveal": "always",
+    "hide": "never",
+    "shell": {
+      "program": "pwsh"
+    }
+  },
+  {
+    "label": "Build Pages",
+    "command": "cd pages && bun run build",
+    "use_new_terminal": false,
+    "allow_concurrent_runs": false,
+    "reveal": "always",
+    "hide": "never",
+    "shell": {
+      "program": "pwsh"
+    }
+  },
+  {
+    "label": "Run",
+    "command": "cargo run",
+    "use_new_terminal": false,
+    "allow_concurrent_runs": false,
+    "reveal": "always",
+    "hide": "never",
+    "shell": {
+      "program": "pwsh"
+    }
+  },
+  {
+    "label": "serve root",
+    "command": "http-server --cors",
+    "use_new_terminal": false,
+    "allow_concurrent_runs": false,
+    "reveal": "always",
+    "hide": "never",
+    "shell": { "program": "pwsh" }
+  }
+]
