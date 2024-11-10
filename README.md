@@ -1,4 +1,4 @@
-# VBT
+![image](https://github.com/user-attachments/assets/05943d5e-5059-40ab-acdf-262fa47f970f)# VBT
 [![Weekly Run](https://github.com/Irilith/VBT/actions/workflows/daily.yml/badge.svg)](https://github.com/Irilith/VBT/actions/workflows/daily.yml)
 [![CI](https://github.com/Irilith/VBT/actions/workflows/ci.yml/badge.svg)](https://github.com/Irilith/VBT/actions/workflows/ci.yml)
 [![Pages](https://github.com/Irilith/VBT/actions/workflows/nextjs.yml/badge.svg?branch=main)](https://github.com/Irilith/VBT/actions/workflows/nextjs.yml)
@@ -7,7 +7,7 @@ Dự án này tạo ra một RSS feed để theo dõi việc đăng ký xuất b
 
 ## Cách dùng
 
-Bạn có thể dùng bất kỳ RSS feed reader nào mà bạn thích (chắc thế), riêng mình thì mình dùng thunderbird, Link rss thì các bạn vào /feed/rss/{title} và chọn bộ mà muốn theo dõi, nhấn raw, copy cái link đó và paste vào RSS Feed Tracker của bạn
+Bạn có thể dùng bất kỳ RSS feed reader nào mà bạn thích (chắc thế), riêng mình thì mình dùng thunderbird, Link rss thì các bạn vào [Web](https://irilith.github.io/VBT) và chọn bộ mà muốn theo dõi, nhấn copy feed url và paste vào RSS Feed Tracker của bạn
 
 Ví dụ: https://raw.githubusercontent.com/Irilith/VBT/refs/heads/main/feed/rss/Majo_no_Tabitabi.rss
 
