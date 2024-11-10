@@ -3,7 +3,7 @@
 [![CI](https://github.com/Irilith/VBT/actions/workflows/ci.yml/badge.svg)](https://github.com/Irilith/VBT/actions/workflows/ci.yml)
 [![Pages](https://github.com/Irilith/VBT/actions/workflows/nextjs.yml/badge.svg?branch=main)](https://github.com/Irilith/VBT/actions/workflows/nextjs.yml)
 
-Dự án này tạo ra một RSS feed để theo dõi việc đăng ký xuất bản của những cuốn sách có bản quyền ở Việt Nam. Nó cung cấp các cập nhật mỗi 7 ngày về các cuốn sách mới được đăng ký (nếu có).
+Dự án này tạo ra một RSS feed để theo dõi việc đăng ký xuất bản của những cuốn sách có bản quyền ở Việt Nam. Nó cung cấp các cập nhật mỗi ngày về các cuốn sách mới được đăng ký (nếu có).
 
 ## Cách dùng
 
