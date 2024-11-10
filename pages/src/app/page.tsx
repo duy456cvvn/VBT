@@ -8,14 +8,14 @@ import { Github, Rss, Book, Blocks } from "lucide-react";
 import RSSSection from "@/components/section/rss";
 
 const floatingImages: string[] = [
-  "/cover/elaina-13.jpg",
-  "/cover/elaina-12.jpeg",
-  "/cover/elaina-7.jpeg",
-  "/cover/reviere-1.jpg",
-  "/cover/nu_chinh_1.png",
-  "/cover/nu_chinh_2.png",
-  "/cover/slime-12.png",
-  "/cover/slime-7.jpg",
+  "cover/elaina-13.jpg",
+  "cover/elaina-12.jpeg",
+  "cover/elaina-7.jpeg",
+  "cover/reviere-1.jpg",
+  "cover/nu_chinh_1.png",
+  "cover/nu_chinh_2.png",
+  "cover/slime-12.png",
+  "cover/slime-7.jpg",
 ];
 
 interface Position {
