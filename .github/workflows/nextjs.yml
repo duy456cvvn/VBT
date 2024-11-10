@@ -1,8 +1,16 @@
-name: Deploy Next.js site to Pages
+name: Pages
 
 on:
   push:
     branches: ["main"]
+    paths-ignore:
+      - "feed/**/*"
+      - ".github/workflows/*"
+      - "*.md"
+      - "*.rs"
+      - "*.toml"
+      - "data_cache.json"
+      - "watchlist.json"
   workflow_dispatch:
 
 permissions:
