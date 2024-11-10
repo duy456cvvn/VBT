@@ -10,6 +10,7 @@ on:
       - "data_cache.json"
       - "watchlist.json"
       - "pages/**"
+      - "rss.json"
   pull_request:
     branches:
       - "**"
@@ -20,7 +21,8 @@ on:
       - "data_cache.json"
       - "watchlist.json"
       - "pages/**"
-
+      - "rss.json"
+      
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref_name }}-${{ github.ref_name == 'main' && github.sha || 'anysha' }}
   cancel-in-progress: true
