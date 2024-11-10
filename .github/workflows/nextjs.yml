@@ -12,6 +12,7 @@ on:
       - "*.toml"
       - "data_cache.json"
       - "watchlist.json"
+      - "rss.json"
   workflow_dispatch:
 
 permissions:
