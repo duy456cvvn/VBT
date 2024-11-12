@@ -1,0 +1,27 @@
+{
+  "query": "Cách sống của thiếu nữ hành quyết",
+  "rows": [
+    {
+      "author": "Mato Sato (Sato Mato); Minh họa: Nilitsu",
+      "isbn": "978-604-392-313-1",
+      "partner": "Công ty cổ phần sách Phú Sĩ - Số 50, Đường 5, Khu tập thể F361, An Dương, quận Tây Hồ, Hà Nội",
+      "quantity": "10000",
+      "registration_number": "3814-2024/CXBIPH/6-176/ThG",
+      "self_published": "",
+      "stt": "1",
+      "title": "Cách sống của thiếu nữ hành quyết - Chỉ một màn sương trắng 2",
+      "translator": "Thanh Nguyệt"
+    },
+    {
+      "author": "Mato Sato (Sato Mato); Minh họa: Nilitsu",
+      "isbn": "978-604-77-7753-2",
+      "partner": "Công ty cổ phần sách Phú Sĩ - Số 50, Đường 5, Khu tập thể F361, An Dương, quận Tây Hồ, Hà Nội",
+      "quantity": "10000",
+      "registration_number": "3069-2023/CXBIPH/5-170/ThG",
+      "self_published": "",
+      "stt": "2",
+      "title": "Cách sống của thiếu nữ hành quyết - Và rồi, cô ấy được tái sinh 1",
+      "translator": "Thanh Nguyệt"
+    }
+  ]
+}
