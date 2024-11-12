@@ -12,7 +12,7 @@
         "english": "Wandering Witch: The Journey of Elaina"
       }
     ],
-    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/nx98741-O0Xcc89Id03h.jpg"
+    "cover": "https://irilith.github.io/VBT/cover/elaina-13.jpg"
   },
   {
     "name": "Riviere Và Đất Nước Của Lời Cầu Nguyện",
@@ -27,7 +27,7 @@
         "english": "Riviere and the Land of Prayer"
       }
     ],
-    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx142837-6zauqRahFMY6.jpg"
+    "cover": "https://irilith.github.io/VBT/cover/reviere-1.jpg"
   },
   {
     "name": "Diệt slime suốt 300 năm, tôi level MAX lúc nào chẳng hay",
@@ -42,7 +42,7 @@
         "english": "I've Been Killing Slimes for 300 Years and Maxed Out My Level"
       }
     ],
-    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/nx100068-bdwtCjYaonIA.jpg"
+    "cover": "https://irilith.github.io/VBT/cover/slime-7.jpg"
   },
   {
     "name": "Nữ chính sinh tồn mạnh mẽ trong thế giới Otome Game",
@@ -57,7 +57,7 @@
         "english": "The Otome Heroine's Fight for Survival"
       }
     ],
-    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx144071-VyBaxZU0czX7.jpg"
+    "cover": "https://irilith.github.io/VBT/cover/nu_chinh_1.png"
   },
   {
     "name": "Overlord",
@@ -72,6 +72,20 @@
         "english": "Overlord"
       }
     ],
-    "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx85976-hVr99G1kD1M5.png"
-  }
+    "cover": "https://i.imgur.com/FWPvQa5.jpeg"
+  },
+  {
+    "name": "Cách sống của thiếu nữ hành quyết",
+    "other": [
+      {
+        "native": "処刑少女の生きる道 ―そして、彼女は甦る―"
+      },
+      {
+        "romaji": "Shokei Shoujo no Virgin Road: Soshite, Kanojo wa Yomigaeru"
+      },
+      {
+        "english": "The Executioner and Her Way of Life"
+      }
+    ],
+    "cover": "https://i.imgur.com/Cvx4pdM.jpeg"
 ]
