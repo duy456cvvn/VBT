@@ -1,5 +1,3 @@
-use std::fmt::format;
-
 use chrono::{Duration, Utc};
 use dotenv::dotenv;
 use vbt_lib::{
@@ -93,7 +91,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
 
     let future_start_time = (Utc::now() + Duration::hours(24)).timestamp();
     let config = FT_CONFIG.read().unwrap();
-    println!("{:?}", config);
+    
     let id = generate_unix_timestamp();
 
     if config.ft_webhook {
