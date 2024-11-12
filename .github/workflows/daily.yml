@@ -24,6 +24,7 @@ jobs:
         env:
           DAILY: ${{ secrets.DAILY }}
           PROCESSED: ${{ secrets.PROCESSED }}
+          FT_WEBHOOK: ${{ secrets.FT_WEBHOOK }}
 
       - name: Git Auto Commit
         uses: stefanzweifel/git-auto-commit-action@v5
