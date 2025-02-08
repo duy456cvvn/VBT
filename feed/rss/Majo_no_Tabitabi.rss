@@ -9,8 +9,16 @@
         <title>Hành Trình Của Elaina</title>
         <link>https://github.com/Irilith/VBT</link>
     </image>
-    <pubDate>Fri, 7 Feb 2025 07:49:58 +0700</pubDate>
-    <lastBuildDate>Fri, 3 Jan 2025 07:49:47 +0700</lastBuildDate>
+    <pubDate>Sat, 8 Feb 2025 07:47:41 +0700</pubDate>
+    <lastBuildDate>Sat, 8 Feb 2025 07:47:41 +0700</lastBuildDate>
+    <item>
+        <title>Hành trình của Elaina tập 6</title>
+        <link>https://github.com/Irilith/VBT</link>
+        <description>Author: Jougi Shiraishi;Minh họa: Azure | Translator: Nguyễn Thị Liên | ISBN: 978-604-355-875-3 | Alternative Titles: Majo no Tabitabi, Wandering Witch: The Journey of Elaina, 魔女の旅々</description>
+        <enclosure url="https://irilith.github.io/VBT/cover/elaina-13.jpg" length="0" type="image/jpeg"></enclosure>
+        <guid>https://ppdvn.gov.vn/web/guest/ke-hoach-xuat-ban?query=Hành+trình+của+Elaina+tập+6</guid>
+        <pubDate>Sat, 8 Feb 2025 07:47:41 +0700</pubDate>
+    </item>
     <item>
         <title>Hành trình của Elaina - tập 16</title>
         <link>https://github.com/Irilith/VBT</link>
@@ -81,14 +89,6 @@
         <description>Author: Jougi Shiraishi; Minh họa: Azure | Translator: Nguyễn Thị Liên | ISBN: 978-604-478-149-5 | Alternative Titles: Majo no Tabitabi, Wandering Witch: The Journey of Elaina, 魔女の旅々</description>
         <enclosure url="https://irilith.github.io/VBT/cover/elaina-13.jpg" length="0" type="image/jpeg"></enclosure>
         <guid>https://ppdvn.gov.vn/web/guest/ke-hoach-xuat-ban?query=Hành+trình+của+Elaina+-+Tập+7</guid>
-        <pubDate>Sat, 9 Nov 2024 01:57:57 +0700</pubDate>
-    </item>
-    <item>
-        <title>Hành trình của Elaina tập 10</title>
-        <link>https://github.com/Irilith/VBT</link>
-        <description>Author: Jougi Shiraishi Minh họa: Azure | Translator: Hoàng Việt Trân | ISBN: 978-604-55-8439-2 | Alternative Titles: Majo no Tabitabi, Wandering Witch: The Journey of Elaina, 魔女の旅々</description>
-        <enclosure url="https://irilith.github.io/VBT/cover/elaina-13.jpg" length="0" type="image/jpeg"></enclosure>
-        <guid>https://ppdvn.gov.vn/web/guest/ke-hoach-xuat-ban?query=Hành+trình+của+Elaina+tập+10</guid>
         <pubDate>Sat, 9 Nov 2024 01:57:57 +0700</pubDate>
     </item>
 </channel>
