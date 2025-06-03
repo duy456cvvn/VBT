@@ -9,8 +9,16 @@
         <title>Overlord</title>
         <link>https://github.com/Irilith/VBT</link>
     </image>
-    <pubDate>Mon, 2 Jun 2025 08:02:06 +0700</pubDate>
-    <lastBuildDate>Sat, 9 Nov 2024 02:09:46 +0700</lastBuildDate>
+    <pubDate>Tue, 3 Jun 2025 08:00:29 +0700</pubDate>
+    <lastBuildDate>Tue, 3 Jun 2025 08:00:29 +0700</lastBuildDate>
+    <item>
+        <title>OVERLORD 11 - Thợ thủ công Dwarf</title>
+        <link>https://github.com/Irilith/VBT</link>
+        <description>Author: Maruyama Kugane | Translator: Mỹ Trinh | ISBN: 978-604-476-527-3 | Alternative Titles: Oobaa Roodo, Overlord, オーバーロード</description>
+        <enclosure url="https://i.imgur.com/FWPvQa5.jpeg" length="0" type="image/jpeg"></enclosure>
+        <guid>https://ppdvn.gov.vn/web/guest/ke-hoach-xuat-ban?query=OVERLORD+11+-+Thợ+thủ+công+Dwarf</guid>
+        <pubDate>Tue, 3 Jun 2025 08:00:29 +0700</pubDate>
+    </item>
     <item>
         <title>Overlord - 7</title>
         <link>https://github.com/Irilith/VBT</link>
@@ -81,14 +89,6 @@
         <description>Author: Maruyama Kugane, Minh họa: So-bin | Translator: Ngọc Phương - Duy Long | ISBN: 978-604-476-082-7 | Alternative Titles: Oobaa Roodo, Overlord, オーバーロード</description>
         <enclosure url="https://i.imgur.com/FWPvQa5.jpeg" length="0" type="image/jpeg"></enclosure>
         <guid>https://ppdvn.gov.vn/web/guest/ke-hoach-xuat-ban?query=Overlord+7+-+Những+kẻ+xâm+nhập</guid>
-        <pubDate>Sat, 9 Nov 2024 02:09:46 +0700</pubDate>
-    </item>
-    <item>
-        <title>Overlord 4 - Lizardman anh dũng</title>
-        <link>https://github.com/Irilith/VBT</link>
-        <description>Author: Maruyama Kugane, Minh họa: So-bin | Translator: Ngọc Lâm | ISBN: 978-604-398-042-4 | Alternative Titles: Oobaa Roodo, Overlord, オーバーロード</description>
-        <enclosure url="https://i.imgur.com/FWPvQa5.jpeg" length="0" type="image/jpeg"></enclosure>
-        <guid>https://ppdvn.gov.vn/web/guest/ke-hoach-xuat-ban?query=Overlord+4+-+Lizardman+anh+dũng</guid>
         <pubDate>Sat, 9 Nov 2024 02:09:46 +0700</pubDate>
     </item>
 </channel>
