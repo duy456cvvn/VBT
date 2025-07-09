@@ -88,5 +88,20 @@
       }
     ],
     "cover": "https://i.imgur.com/Cvx4pdM.jpeg"
+  },
+  {
+    "name": "86 Eighty Six",
+    "other": [
+      {
+        "native": "86―エイティシックス―"
+      },
+      {
+        "romaji": "86: Eighty Six"
+      },
+      {
+        "english": "86―EIGHTY-SIX"
+      }
+    ],
+    "cover": "https://files.catbox.moe/eivawb.jpg"
   }
 ]

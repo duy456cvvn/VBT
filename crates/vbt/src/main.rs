@@ -10,6 +10,7 @@ use vbt_lib::{
     json::return_json::return_json,
     requests::get_data,
     services::watchlist::load_watchlist,
+    types::errors::ProcessError,
     utils::time::{generate_time, generate_unix_timestamp},
 };
 
@@ -27,58 +28,61 @@ async fn send_webhook_message(
     Ok(())
 }
 
-async fn process_watchlist(id: i64, config: &EnvFlag) -> Result<(), Box<dyn std::error::Error>> {
+async fn process_watchlist(id: i64, config: &EnvFlag) -> Result<(), ProcessError> {
     let watchlist = load_watchlist()?;
 
     for entry in watchlist {
         // Fetch data using name in the watchlist
-        let rows = get_data::extract_table_data(&entry.name)
-            .await
-            .map_err(|e| {
+        let rows = match get_data::extract_table_data(&entry.name).await {
+            Ok(data) => data,
+            Err(e) => {
+                eprintln!("Failed to fetch data for {}: {}", entry.name, e);
+                continue;
+            }
+        };
+        if rows.is_empty() {
+            eprintln!("Entry {} is empty, skipping", entry.name);
+        } else {
+            // Generate JSON for json file
+            let json_data = return_json(&entry.name, &rows).map_err(|e| {
                 Box::<dyn std::error::Error>::from(format!(
-                    "Failed to fetch data for {}: {}",
+                    "Failed to generate JSON for {}: {}",
                     entry.name, e
                 ))
             })?;
 
-        // Generate JSON for json file
-        let json_data = return_json(&entry.name, &rows).map_err(|e| {
-            Box::<dyn std::error::Error>::from(format!(
-                "Failed to generate JSON for {}: {}",
-                entry.name, e
-            ))
-        })?;
+            // Get romaji filename or use "name" if not available
+            let filename_base = entry
+                .other
+                .get("romaji")
+                .unwrap_or(&entry.name)
+                .replace(" ", "_");
 
-        // Get romaji filename or use "name" if not available
-        let filename_base = entry
-            .other
-            .get("romaji")
-            .unwrap_or(&entry.name)
-            .replace(" ", "_");
+            json_ops::save_json(&json_data, &format!("feed/json/{}.json", filename_base))?;
 
-        json_ops::save_json(&json_data, &format!("feed/json/{}.json", filename_base))?;
+            let rss_content = rss_ops::generate_rss(&rows, &entry);
+            rss_ops::save_rss(&rss_content, &format!("feed/rss/{}.rss", filename_base))?;
 
-        let rss_content = rss_ops::generate_rss(&rows, &entry);
-        rss_ops::save_rss(&rss_content, &format!("feed/rss/{}.rss", filename_base))?;
+            println!("Processed: {}", entry.name);
 
-        println!("Processed: {}", entry.name);
-
-        if config.ft_webhook {
-            let url = wh::processed_url().map_err(Box::<dyn std::error::Error>::from)?;
-            let title = entry.name;
-            let description = format!("Id: **{}**", id);
-            let embed = DiscordEmbed {
-                title,
-                description,
-                footer: Some(EmbedFooter {
-                    text: format!("VBT - {}", generate_time()),
+            if config.ft_webhook {
+                let url = wh::processed_url().map_err(Box::<dyn std::error::Error>::from)?;
+                let title = entry.name;
+                let description = format!("Id: **{}**", id);
+                let embed = DiscordEmbed {
+                    title,
+                    description,
+                    footer: Some(EmbedFooter {
+                        text: format!("VBT - {}", generate_time()),
+                        ..Default::default()
+                    }),
+                    thumbnail: Some(EmbedThumbnail { url: entry.cover }),
                     ..Default::default()
-                }),
-                thumbnail: Some(EmbedThumbnail { url: entry.cover }),
-                ..Default::default()
-            };
+                };
 
-            send_webhook_message(url, "<@&1304123731442012220>".to_string(), embed, config).await?;
+                send_webhook_message(url, "<@&1304123731442012220>".to_string(), embed, config)
+                    .await?;
+            }
         }
     }
     Ok(())
@@ -91,7 +95,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
 
     let future_start_time = (Utc::now() + Duration::hours(24)).timestamp();
     let config = FT_CONFIG.read().unwrap();
-    
+
     let id = generate_unix_timestamp();
 
     if config.ft_webhook {

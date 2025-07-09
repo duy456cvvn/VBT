@@ -16,9 +16,36 @@ async fn get_data_fetch(query: &str, page: u8) -> Result<String, Box<dyn std::er
 }
 
 pub async fn extract_table_data(query: &str) -> Result<Vec<BookRow>, Box<dyn std::error::Error>> {
+    const MAX_RETRIES: u32 = 3;
+    let mut last_error = None;
+
+    for attempt in 1..=MAX_RETRIES {
+        match try_extract_table_data(query).await {
+            Ok(rows) => return Ok(rows),
+            Err(e) => {
+                if e.to_string().contains("Table not found") {
+                    println!("Attempt {}: Table not found, retrying...", attempt);
+                    last_error = Some(e);
+                    if attempt < MAX_RETRIES {
+                        tokio::time::sleep(tokio::time::Duration::from_millis(5000)).await;
+                    }
+                } else {
+                    return Err(e);
+                }
+            }
+        }
+    }
+
+    println!(
+        "Table not found after {} attempts, continuing with empty result",
+        MAX_RETRIES
+    );
+    Ok(Vec::new())
+}
+
+async fn try_extract_table_data(query: &str) -> Result<Vec<BookRow>, Box<dyn std::error::Error>> {
     let html = get_data_fetch(query, 1).await?;
     let document = Html::parse_document(&html);
-
     let selectors = (
         Selector::parse("#list_data_return table")
             .map_err(|e| format!("Invalid table selector: {}", e))?,
@@ -38,7 +65,6 @@ pub async fn extract_table_data(query: &str) -> Result<Vec<BookRow>, Box<dyn std
                 .select(&selectors.2)
                 .map(|cell| cell.text().collect::<String>().trim().to_string())
                 .collect();
-
             if cells.len() == 9 {
                 Some(BookRow {
                     stt: cells[0].clone(),
@@ -56,6 +82,5 @@ pub async fn extract_table_data(query: &str) -> Result<Vec<BookRow>, Box<dyn std
             }
         })
         .collect();
-
     Ok(rows)
 }
