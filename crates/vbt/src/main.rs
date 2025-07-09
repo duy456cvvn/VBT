@@ -10,7 +10,6 @@ use vbt_lib::{
     json::return_json::return_json,
     requests::get_data,
     services::watchlist::load_watchlist,
-    types::errors::ProcessError,
     utils::time::{generate_time, generate_unix_timestamp},
 };
 

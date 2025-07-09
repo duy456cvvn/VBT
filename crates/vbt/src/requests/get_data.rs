@@ -25,6 +25,7 @@ pub async fn extract_table_data(query: &str) -> Result<Vec<BookRow>, Box<dyn std
             Err(e) => {
                 if e.to_string().contains("Table not found") {
                     println!("Attempt {}: Table not found, retrying...", attempt);
+                    #[allow(unused_assignments)]
                     last_error = Some(e);
                     if attempt < MAX_RETRIES {
                         tokio::time::sleep(tokio::time::Duration::from_millis(5000)).await;
