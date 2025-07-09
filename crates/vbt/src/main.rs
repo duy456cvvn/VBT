@@ -27,7 +27,7 @@ async fn send_webhook_message(
     Ok(())
 }
 
-async fn process_watchlist(id: i64, config: &EnvFlag) -> Result<(), ProcessError> {
+async fn process_watchlist(id: i64, config: &EnvFlag) -> Result<(), Box<dyn std::error::Error>> {
     let watchlist = load_watchlist()?;
 
     for entry in watchlist {
