@@ -62,7 +62,7 @@ async fn process_watchlist(id: i64, config: &EnvFlag) -> Result<(), Box<dyn std:
 
             json_ops::save_json(
                 &json_data,
-                &format!("feed/json/{}.json", sanitize_filename(filename_base)),
+                &format!("feed/json/{}.json", sanitize_filename(&filename_base)),
             )?;
 
             rss_ops::generate_and_save_rss(
