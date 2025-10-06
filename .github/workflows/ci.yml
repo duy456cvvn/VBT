@@ -22,7 +22,7 @@ on:
       - "watchlist.json"
       - "pages/**"
       - "rss.json"
-      
+
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref_name }}-${{ github.ref_name == 'main' && github.sha || 'anysha' }}
   cancel-in-progress: true
@@ -38,7 +38,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Rust Cache
-        uses: Swatinem/rust-cache@v2.7.3
+        uses: Swatinem/rust-cache@v2.8.1
 
       - name: Build
         run: cargo build --verbose

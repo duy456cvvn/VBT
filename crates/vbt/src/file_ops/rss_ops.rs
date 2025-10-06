@@ -2,15 +2,19 @@ use crate::{
     types::{book::BookRow, watchlist::WatchlistEntry},
     utils::{
         cache::{generate_cache_key, load_cache, save_cache},
-        fs::ensure_parent_dir,
-        time::generate_time,
         url::get_mime_type,
     },
 };
-use std::{collections::HashSet, fs::File, io::Write};
+use chrono::{DateTime, Utc};
+use rss::write::{Channel, Item};
+use std::collections::HashSet;
 
-pub fn generate_rss(books: &[BookRow], watchlist_entry: &WatchlistEntry) -> String {
-    let now = generate_time();
+pub fn generate_and_save_rss(
+    books: &[BookRow],
+    watchlist_entry: &WatchlistEntry,
+    output_path: impl AsRef<std::path::Path>,
+) -> Result<(), String> {
+    let now = Utc::now();
     let mut cache = load_cache::<String>("date_cache.json");
 
     let new_titles: HashSet<_> = books
@@ -19,44 +23,19 @@ pub fn generate_rss(books: &[BookRow], watchlist_entry: &WatchlistEntry) -> Stri
         .filter(|key| !cache.data.contains_key(key))
         .collect();
 
-    let title_build_date = if !new_titles.is_empty() {
-        // There are new books update the publication date
+    let title_build_date: DateTime<Utc> = if !new_titles.is_empty() {
         cache
             .title_build_date
-            .insert(watchlist_entry.name.clone(), now.clone());
-        now.clone()
+            .insert(watchlist_entry.name.clone(), now.to_rfc2822());
+        now
     } else {
-        // No new books, use existing date or current time if existing date not found
         cache
             .title_build_date
             .get(&watchlist_entry.name)
-            .cloned()
-            .unwrap_or_else(|| now.clone())
+            .and_then(|s| DateTime::parse_from_rfc2822(s).ok())
+            .map(|d| d.with_timezone(&Utc))
+            .unwrap_or(now)
     };
-
-    let mut rss = String::with_capacity(books.len() * 500);
-    rss.push_str(&format!(
-        r#"<?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0">
-<channel>
-    <title>{}</title>
-    <link>https://github.com/Irilith/VBT</link>
-    <description>VBT feed for: {}</description>
-    <image>
-        <url>{}</url>
-        <title>{}</title>
-        <link>https://github.com/Irilith/VBT</link>
-    </image>
-    <pubDate>{}</pubDate>
-    <lastBuildDate>{}</lastBuildDate>
-"#,
-        watchlist_entry.name,
-        watchlist_entry.name,
-        watchlist_entry.cover,
-        watchlist_entry.name,
-        now,
-        title_build_date,
-    ));
 
     let alt_titles = {
         let mut titles: Vec<_> = watchlist_entry
@@ -68,56 +47,56 @@ pub fn generate_rss(books: &[BookRow], watchlist_entry: &WatchlistEntry) -> Stri
         titles.join(", ")
     };
 
+    let mut channel = Channel::new(
+        &watchlist_entry.name,
+        "https://github.com/Irilith/VBT",
+        format!("VBT feed for: {}", watchlist_entry.name),
+    )
+    .image(
+        &watchlist_entry.cover,
+        &watchlist_entry.name,
+        "https://github.com/Irilith/VBT",
+    )
+    .pub_date(now)
+    .last_build_date(title_build_date);
+
     for book in books {
         let cache_key = generate_cache_key(book);
         let mime_type = get_mime_type(&watchlist_entry.cover);
-        let pub_date = cache
+        // let pub_date = cache.data.entry(cache_key).or_insert(now).clone();
+
+        let pub_date_str = cache
             .data
             .entry(cache_key)
-            .or_insert_with(|| now.clone())
+            .or_insert(now.to_rfc2822())
             .clone();
+        let pub_date = DateTime::parse_from_rfc2822(&pub_date_str)
+            .unwrap()
+            .with_timezone(&Utc);
 
-        rss.push_str(&format!(
-            r#"    <item>
-        <title>{}</title>
-        <link>https://github.com/Irilith/VBT</link>
-        <description>Author: {} | Translator: {} | ISBN: {} | Alternative Titles: {}</description>
-        <enclosure url="{}" length="0" type="{}"></enclosure>
-        <guid>{}</guid>
-        <pubDate>{}</pubDate>
-    </item>
-"#,
-            book.title,
-            book.author,
-            book.translator,
-            book.isbn,
-            alt_titles,
-            watchlist_entry.cover,
-            mime_type,
+        let item = Item::new(
+            &book.title,
+            "https://github.com/Irilith/VBT",
+            format!(
+                "Author: {} | Translator: {} | ISBN: {} | Alternative Titles: {}",
+                book.author, book.translator, book.isbn, alt_titles
+            ),
             format!(
                 "https://ppdvn.gov.vn/web/guest/ke-hoach-xuat-ban?query={}",
                 book.title.trim_end().replace(" ", "+")
             ),
-            pub_date,
-        ));
-    }
+        )
+        .enclosure(&watchlist_entry.cover, 0, mime_type)
+        .pub_date(pub_date);
 
-    rss.push_str("</channel>\n</rss>");
+        channel = channel.item(item);
+    }
 
     if let Err(e) = save_cache(&cache, "date_cache.json") {
         eprintln!("Failed to save date cache: {}", e);
     }
 
-    rss
-}
-
-pub fn save_rss(content: &str, path: &str) -> Result<(), String> {
-    ensure_parent_dir(path)?;
-
-    File::create(path)
-        .map_err(|e| format!("Failed to create RSS file: {}", e))?
-        .write_all(content.as_bytes())
-        .map_err(|e| format!("Failed to write RSS content: {}", e))?;
-
-    Ok(())
+    channel
+        .save_to_file(output_path)
+        .map_err(|e| format!("Failed to save RSS: {}", e))
 }

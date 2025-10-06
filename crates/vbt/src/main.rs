@@ -10,7 +10,10 @@ use vbt_lib::{
     json::return_json::return_json,
     requests::get_data,
     services::watchlist::load_watchlist,
-    utils::time::{generate_time, generate_unix_timestamp},
+    utils::{
+        cache::sanitize_filename,
+        time::{generate_time, generate_unix_timestamp},
+    },
 };
 
 async fn send_webhook_message(
@@ -57,11 +60,16 @@ async fn process_watchlist(id: i64, config: &EnvFlag) -> Result<(), Box<dyn std:
                 .unwrap_or(&entry.name)
                 .replace(" ", "_");
 
-            json_ops::save_json(&json_data, &format!("feed/json/{}.json", filename_base))?;
+            json_ops::save_json(
+                &json_data,
+                &format!("feed/json/{}.json", sanitize_filename(filename_base)),
+            )?;
 
-            let rss_content = rss_ops::generate_rss(&rows, &entry);
-            rss_ops::save_rss(&rss_content, &format!("feed/rss/{}.rss", filename_base))?;
-
+            rss_ops::generate_and_save_rss(
+                &rows,
+                &entry,
+                format!("feed/rss/{}.rss", sanitize_filename(filename_base)),
+            )?;
             println!("Processed: {}", entry.name);
 
             if config.ft_webhook {

@@ -6,6 +6,7 @@ default-members = ["crates/vbt"]
 
 [workspace.dependencies]
 dotenv = "0.15.0"
+rss = {path = "crates/rss"}
 
 [profile.release]
 debug = false

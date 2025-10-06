@@ -7,3 +7,4 @@ edition = "2021"
 path = "src/rss.rs"
 
 [dependencies]
+chrono = "0.4"

@@ -23,8 +23,9 @@ reqwest = { version = "0.12", features = ["json"] }
 scraper = "0.21"
 chrono = "0.4"
 tokio = { version = "1.41", features = ["full"] }
-dotenv.workspace = true
 serde = { version = "1", features = ["derive"] }
 serde_json = "1"
 thiserror = "2.0.2"
 lazy_static = "1.5.0"
+dotenv.workspace = true
+rss.workspace = true

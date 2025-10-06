@@ -8,6 +8,15 @@ pub struct Cache<T> {
     pub title_build_date: HashMap<String, T>,
 }
 
+pub fn sanitize_filename(name: impl Into<String>) -> String {
+    let invalid_chars = ['<', '>', ':', '"', '/', '\\', '|', '?', '*'];
+    let mut sanitized = name.into();
+    for c in &invalid_chars {
+        sanitized = sanitized.replace(*c, "_");
+    }
+    sanitized
+}
+
 pub fn generate_cache_key(book: &BookRow) -> String {
     format!("{}-{}", book.isbn, book.title)
 }
