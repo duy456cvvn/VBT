@@ -89,7 +89,7 @@ impl Channel {
         let mut rss = String::with_capacity(self.items.len() * 500 + 500);
 
         writeln!(rss, r#"<?xml version="1.0" encoding="UTF-8"?>"#)?;
-        writeln!(rss, r#"<rss version="2.0""#)?;
+        writeln!(rss, r#"<rss version="2.0">"#)?;
         writeln!(rss, "<channel>")?;
         writeln!(rss, "     <title>{}</title>", escape_xml(&self.title))?;
         writeln!(rss, "     <link>{}</link>", escape_xml(&self.link))?;
@@ -124,7 +124,7 @@ impl Channel {
             writeln!(rss, "         <link>{}</link>", escape_xml(&item.link))?;
             writeln!(
                 rss,
-                "       <description>{}</description>",
+                "         <description>{}</description>",
                 escape_xml(&item.description)
             )?;
 
