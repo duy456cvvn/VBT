@@ -137,8 +137,16 @@ impl Channel {
                     escape_xml(&enclosure.mime_type)
                 )?;
             }
-            writeln!(rss, "     <guid>{}</guid>", escape_xml(&item.guid))?;
-            writeln!(rss, "     <pubDate>{}</pubDate", escape_xml(&item.pub_date))?;
+            writeln!(
+                rss,
+                r#"     <guid isPermaLink="false">{}</guid>"#,
+                escape_xml(&item.guid)
+            )?;
+            writeln!(
+                rss,
+                "     <pubDate>{}</pubDate>",
+                escape_xml(&item.pub_date)
+            )?;
             writeln!(rss, "     </item>")?;
         }
 
