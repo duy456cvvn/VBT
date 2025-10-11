@@ -1,107 +1,77 @@
 [
   {
-    "name": "Hành Trình Của Elaina",
+    "name": "Cuộc nổi dậy của cô nàng mọt sách",
     "other": [
       {
-        "native": "魔女の旅々"
+        "native": "本好きの下剋上 領主の養女"
       },
       {
-        "romaji": "Majo no Tabitabi"
+        "romaji": "Honzuki no Gekokujou: Ryoushu no Youjo"
       },
       {
-        "english": "Wandering Witch: The Journey of Elaina"
+        "english": "Ascendance of a Bookworm"
       }
     ],
-    "cover": "https://irilith.github.io/VBT/cover/elaina-13.jpg"
+    "cover": "https://files.catbox.moe/yum4fg.png"
   },
   {
-    "name": "Riviere Và Đất Nước Của Lời Cầu Nguyện",
+    "name": "Tôi là Nhện đấy, có sao không?",
     "other": [
       {
-        "native": "祈りの国のリリエール"
+        "native": "蜘蛛ですが、なにか？"
       },
       {
-        "romaji": "Inori no Kuni no Riviere"
+        "romaji": "Kumo desu ga, Nani ka"
       },
       {
-        "english": "Riviere and the Land of Prayer"
+        "english": "Kumo desu ga, Nani ka?"
       }
     ],
-    "cover": "https://irilith.github.io/VBT/cover/reviere-1.jpg"
+    "cover": "https://files.catbox.moe/ipp3bf.png"
   },
   {
-    "name": "Diệt slime suốt 300 năm, tôi level MAX lúc nào chẳng hay",
+    "name": "Dược sư tự sự",
     "other": [
       {
-        "native": "スライム倒して300年、知らないうちにレベルＭＡＸになってました"
+        "native": "薬屋のひとりごと"
       },
       {
-        "romaji": "Slime Taoshite 300-nen, Shiranai Uchi ni Level MAX ni Nattemashita"
+        "romaji": "Kusuriya no Hitorigoto"
       },
       {
-        "english": "I've Been Killing Slimes for 300 Years and Maxed Out My Level"
+        "english": "The Apothecary Diaries"
       }
     ],
-    "cover": "https://irilith.github.io/VBT/cover/slime-7.jpg"
+    "cover": "https://files.catbox.moe/7ziami.jpg"
   },
   {
-    "name": "Nữ chính sinh tồn mạnh mẽ trong thế giới Otome Game",
+    "name": "Tanya chiến ký",
     "other": [
       {
-        "native": "乙女ゲームのヒロインで最強サバイバル"
+        "native": "幼女戦記"
       },
       {
-        "romaji": "Otome Game no Heroine de Saikyou Survive"
+        "romaji": "Youjo Senki"
       },
       {
-        "english": "The Otome Heroine's Fight for Survival"
+        "english": "Saga of Tanya the Evil"
       }
     ],
-    "cover": "https://irilith.github.io/VBT/cover/nu_chinh_1.png"
+    "cover": "https://files.catbox.moe/wlwrij.png"
   },
   {
-    "name": "Overlord",
+    "name": "  Có thứ muốn ăn thịt tôi",
     "other": [
       {
-        "native": "オーバーロード"
+        "native": "私を喰べたい、ひとでなし"
       },
       {
-        "romaji": "Oobaa Roodo"
+        "romaji": "Watashi wo Tabetai, Hitodenashi"
       },
       {
-        "english": "Overlord"
+        "english": "This Monster Wants to Eat Me"
       }
     ],
-    "cover": "https://i.imgur.com/FWPvQa5.jpeg"
-  },
-  {
-    "name": "Cách sống của thiếu nữ hành quyết",
-    "other": [
-      {
-        "native": "処刑少女の生きる道 ―そして、彼女は甦る―"
-      },
-      {
-        "romaji": "Shokei Shoujo no Virgin Road"
-      },
-      {
-        "english": "The Executioner and Her Way of Life"
-      }
-    ],
-    "cover": "https://i.imgur.com/Cvx4pdM.jpeg"
-  },
-  {
-    "name": "86 Eighty Six",
-    "other": [
-      {
-        "native": "86―エイティシックス―"
-      },
-      {
-        "romaji": "86: Eighty Six"
-      },
-      {
-        "english": "86―EIGHTY-SIX"
-      }
-    ],
-    "cover": "https://files.catbox.moe/eivawb.jpg"
+    "cover": "https://files.catbox.moe/kf4p4y.jpg"
   }
 ]
