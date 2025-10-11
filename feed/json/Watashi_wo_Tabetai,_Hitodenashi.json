@@ -1,0 +1,115 @@
+{
+  "query": "  Có thứ muốn ăn thịt tôi",
+  "rows": [
+    {
+      "author": "Naekawa Sai",
+      "isbn": "978-632-624-401-4",
+      "partner": "Công ty Cổ phần Xuất bản và truyền thông IPM: 110 Nguyễn Ngọc Nại, Phương Liệt, Hà Nội",
+      "quantity": "10000",
+      "registration_number": "3684-2025/CXBIPH/32-152/VH",
+      "self_published": "",
+      "stt": "1",
+      "title": "Có thứ muốn ăn thịt tôi 10",
+      "translator": "Trần Yang"
+    },
+    {
+      "author": "Naekawa Sai",
+      "isbn": "978-604-44-7413-7",
+      "partner": "Công ty CP Xuất bản và Truyền thông IPM - Địa chỉ: Số 110 Nguyễn Ngọc Nại, Phương Liệt, Hà Nội",
+      "quantity": "10000",
+      "registration_number": "3291-2025/CXBIPH/14-278/HN",
+      "self_published": "",
+      "stt": "2",
+      "title": "Có thứ muốn ăn thịt tôi 10",
+      "translator": "Trần Yang"
+    },
+    {
+      "author": "Naekawa Sai",
+      "isbn": "978-604-44-2679-2",
+      "partner": "Công ty CP Xuất bản và Truyền thông IPM - Số 110 Nguyễn Ngọc Nại, Thanh Xuân, Hà Nội",
+      "quantity": "10000",
+      "registration_number": "1347-2025/CXBIPH/7-127/HN",
+      "self_published": "",
+      "stt": "3",
+      "title": "Có thứ muốn ăn thịt tôi 1",
+      "translator": "Trần Yang"
+    },
+    {
+      "author": "Naekawa Sai",
+      "isbn": "978-604-44-4613-4",
+      "partner": "Công ty CP Xuất bản và Truyền thông IPM - Số 110 Nguyễn Ngọc Nại, Thanh Xuân, Hà Nội",
+      "quantity": "10000",
+      "registration_number": "349-2025/CXBIPH/3-30/HN",
+      "self_published": "",
+      "stt": "4",
+      "title": "Có thứ muốn ăn thịt tôi 9",
+      "translator": "Trần Yang"
+    },
+    {
+      "author": "Naekawa Sai",
+      "isbn": "978-604-44-4612-7",
+      "partner": "Công ty CP Xuất bản và Truyền thông IPM - Số 110 Nguyễn Ngọc Nại, Thanh Xuân, Hà Nội",
+      "quantity": "10000",
+      "registration_number": "349-2025/CXBIPH/2-30/HN",
+      "self_published": "",
+      "stt": "5",
+      "title": "Có thứ muốn ăn thịt tôi 8",
+      "translator": "Trần Yang"
+    },
+    {
+      "author": "Naekawa Sai",
+      "isbn": "978-604-44-3903-7",
+      "partner": "Công ty CP Xuất bản và Truyền thông IPM - Địa chỉ: Số 110 Nguyễn Ngọc Nại, Thanh Xuân, Hà Nội",
+      "quantity": "10000",
+      "registration_number": "149-2025/CXBIPH/11-10/HN",
+      "self_published": "",
+      "stt": "6",
+      "title": "Có thứ muốn ăn thịt tôi 7",
+      "translator": "Trần Yang"
+    },
+    {
+      "author": "Naekawa Sai",
+      "isbn": "978-604-44-3902-0",
+      "partner": "Công ty CP Xuất bản và Truyền thông IPM - Địa chỉ: Số 110 Nguyễn Ngọc Nại, Thanh Xuân, Hà Nội",
+      "quantity": "10000",
+      "registration_number": "149-2025/CXBIPH/10-10/HN",
+      "self_published": "",
+      "stt": "7",
+      "title": "Có thứ muốn ăn thịt tôi 6",
+      "translator": "Trần Yang"
+    },
+    {
+      "author": "Naekawa Sai",
+      "isbn": "978-604-44-2683-9",
+      "partner": "Công ty CP Xuất bản và Truyền thông IPM - Địa chỉ: Số 110 Nguyễn Ngọc Nại, Thanh Xuân, Hà Nội",
+      "quantity": "10000",
+      "registration_number": "2507-2024/CXBIPH/12-198/HN",
+      "self_published": "",
+      "stt": "8",
+      "title": "Có thứ muốn ăn thịt tôi 5",
+      "translator": "Trần Yang"
+    },
+    {
+      "author": "Naekawa Sai",
+      "isbn": "978-604-44-2682-2",
+      "partner": "Công ty CP Xuất bản và Truyền thông IPM - Địa chỉ: Số 110 Nguyễn Ngọc Nại, Thanh Xuân, Hà Nội",
+      "quantity": "10000",
+      "registration_number": "2507-2024/CXBIPH/11-198/HN",
+      "self_published": "",
+      "stt": "9",
+      "title": "Có thứ muốn ăn thịt tôi 4",
+      "translator": "Trần Yang"
+    },
+    {
+      "author": "Naekawa Sai",
+      "isbn": "978-604-44-2681-5",
+      "partner": "Công ty CP Xuất bản và Truyền thông IPM - Địa chỉ: Số 110 Nguyễn Ngọc Nại, Thanh Xuân, Hà Nội",
+      "quantity": "10000",
+      "registration_number": "2507-2024/CXBIPH/10-198/HN",
+      "self_published": "",
+      "stt": "10",
+      "title": "Có thứ muốn ăn thịt tôi 3",
+      "translator": "Trần Yang"
+    }
+  ]
+}

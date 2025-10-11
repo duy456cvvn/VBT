@@ -1,0 +1,115 @@
+{
+  "query": "Tanya chiến ký",
+  "rows": [
+    {
+      "author": "Carlo Zen;Minh họa: Shinobu Shinotuki",
+      "isbn": "978-604-44-6705-4",
+      "partner": "Công ty CP Sách Thái Hà - Địa chỉ: Số 119, C5 Tô Hiệu, Cầu Giấy, Hà Nội",
+      "quantity": "5000",
+      "registration_number": "2292-2025/CXBIPH/7-192/HN",
+      "self_published": "",
+      "stt": "1",
+      "title": "Tanya chiến ký 5: Abyssus Abyssum Invocat",
+      "translator": "Sinh Tố; Hiệu đính: Dương Gia Thịnh"
+    },
+    {
+      "author": "Carlo Zen; Minh họa: Shinobu Shinotuki",
+      "isbn": "978-604-395-869-0",
+      "partner": "Công ty CP sách Thái Hà; Địa chỉ: 119 C5, Tô Hiệu, Nghĩa Tân, Cầu Giấy, Hà Nội",
+      "quantity": "10000",
+      "registration_number": "387-2023/CXBIPH/8-19/HN",
+      "self_published": "",
+      "stt": "2",
+      "title": "Tanya chiến ký 3 - The Finest Hour",
+      "translator": "Sinh Tố; Dương Gia Thịnh hiệu đính"
+    },
+    {
+      "author": "Carlo Zen; Minh họa: Shinobu Shinotuki",
+      "isbn": "978-604-395-868-3",
+      "partner": "Công ty CP sách Thái Hà; Địa chỉ: 119 C5, Tô Hiệu, Nghĩa Tân, Cầu Giấy, Hà Nội",
+      "quantity": "10000",
+      "registration_number": "387-2023/CXBIPH/7-19/HN",
+      "self_published": "",
+      "stt": "3",
+      "title": "Tanya chiến ký 2 (Plus Ultra)",
+      "translator": "Sinh Tố; Dương Gia Thịnh hiệu đính"
+    },
+    {
+      "author": "Carlo Zen; Minh họa: Shinobu Shinotuki",
+      "isbn": "978-604-395-867-6",
+      "partner": "Công ty CP sách Thái Hà; Địa chỉ: 119 C5, Tô Hiệu, Nghĩa Tân, Cầu Giấy, Hà Nội",
+      "quantity": "10000",
+      "registration_number": "387-2023/CXBIPH/6-19/HN",
+      "self_published": "",
+      "stt": "4",
+      "title": "Tanya chiến ký 1 (Deus lo Vult)",
+      "translator": "Dương Gia Thịnh; Hiệu đính: Chán - Nguyên Phạm"
+    },
+    {
+      "author": "Carlo Zen; Minh họa: Shinobu Shinotsuki",
+      "isbn": "978-604-395-719-8",
+      "partner": "Công ty CP sách Thái Hà; Địa chỉ: 119 C5, Tô Hiệu, Nghĩa Tân, Cầu Giấy, Hà Nội",
+      "quantity": "10000",
+      "registration_number": "335-2023/CXBIPH/26-18/HN",
+      "self_published": "",
+      "stt": "5",
+      "title": "Tanya chiến ký 4 - Dabit deus his quoque finem",
+      "translator": "Sinh Tố; Dương Gia Thịnh hiệu đính"
+    },
+    {
+      "author": "Carlo Zen, Minh họa: Shinobu Shinotuki",
+      "isbn": "978-604-359-127-9",
+      "partner": "Công ty cổ phần sách Thái Hà, Địa chỉ: Số 119 C5, Tô Hiệu, Nghĩa Tân, Cầu Giấy, Hà Nội",
+      "quantity": "10000",
+      "registration_number": "446-2022/CXBIPH/9-35/HN",
+      "self_published": "",
+      "stt": "6",
+      "title": "Tanya chiến ký 1 (Deus lo Vult)",
+      "translator": "Dịch: Dương Gia Thịnh Hiệu đính: Chán - Nguyên Phạm"
+    },
+    {
+      "author": "Carlo Zen; Minh họa: Shinobu Shinotuki",
+      "isbn": "978-604-355-683-4",
+      "partner": "Công ty CP sách Thái Hà; Địa chỉ: 119 C5, Tô Hiệu, Nghĩa Tân, Cầu Giấy, Hà Nội",
+      "quantity": "5000",
+      "registration_number": "288-2022/CXBIPH/33-15/HN",
+      "self_published": "",
+      "stt": "7",
+      "title": "Tanya chiến ký 2 (Plus Ultra)",
+      "translator": "Dịch giả; Sinh Tố; Dương Gia Thịnh hiệu đính"
+    },
+    {
+      "author": "Tác giả: Carlo Zen; Shinobu Shinotuki minh hoạ",
+      "isbn": "978-604-355-289-8",
+      "partner": "Công ty cổ phần sách Thái Hà; Địa chỉ: 119 C5, Tô Hiệu, Nghĩa Tân, Cầu Giấy, Hà Nội",
+      "quantity": "5000",
+      "registration_number": "123-2022/CXBIPH/8-06/HN",
+      "self_published": "",
+      "stt": "8",
+      "title": "Tanya chiến ký 3 - The Finest Hour",
+      "translator": "Dịch giả: Sinh Tố; Dương Gia Thịnh hiệu đính"
+    },
+    {
+      "author": "Carlo Zen; Minh họa: Shinobu Shinotuki",
+      "isbn": "978-604-55-8916-8",
+      "partner": "Công ty CP sách Thái Hà, Địa chỉ: Số 119 C5, Tô Hiệu, Nghĩa Tân, Cầu Giấy, Hà Nội",
+      "quantity": "5000",
+      "registration_number": "840-2021/CXBIPH/2-69/HN",
+      "self_published": "",
+      "stt": "9",
+      "title": "Tanya chiến ký 2 (Plus Ultra)",
+      "translator": "Dịch giả; Sinh Tố; Dương Gia Thịnh hiệu đính"
+    },
+    {
+      "author": "Carlo Zen",
+      "isbn": "978-604-55-8611-2",
+      "partner": "Công ty CP sách Thái Hà, Địa chỉ: Số 119 C5, Tô Hiệu, Nghĩa Tân, Cầu Giấy, Hà Nội",
+      "quantity": "5000",
+      "registration_number": "536-2021/CXBIPH/3-42/HN",
+      "self_published": "",
+      "stt": "10",
+      "title": "Tanya chiến ký 2 (Plus Ultra)",
+      "translator": "Dịch giả; Sinh Tố; hiệu đính: Dương Gia Thịnh"
+    }
+  ]
+}
