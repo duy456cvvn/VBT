@@ -3,12 +3,34 @@
   "rows": [
     {
       "author": "Naekawa Sai",
+      "isbn": "978-604-44-7413-7",
+      "partner": "Công ty CP Xuất bản và Truyền thông IPM - Địa chỉ: Số 88 Phố Nguyễn Văn Trỗi, Phương Liệt, Hà Nội",
+      "quantity": "10000",
+      "registration_number": "1447-2026/CXBIPH/4-123/HN",
+      "self_published": "",
+      "stt": "1",
+      "title": "Có thứ muốn ăn thịt tôi 10",
+      "translator": "Trần Yang"
+    },
+    {
+      "author": "Naekawa Sai",
+      "isbn": "978-604-44-3902-0",
+      "partner": "Công ty CP Xuất bản và Truyền thông IPM - Địa chỉ: Số 88 Phố Nguyễn Văn Trỗi, Phương Liệt, Hà Nội",
+      "quantity": "10000",
+      "registration_number": "1447-2026/CXBIPH/3-123/HN",
+      "self_published": "",
+      "stt": "2",
+      "title": "Có thứ muốn ăn thịt tôi 06",
+      "translator": "Trần Yang"
+    },
+    {
+      "author": "Naekawa Sai",
       "isbn": "978-604-44-2682-2",
       "partner": "Công ty CP Xuất bản và Truyền thông IPM - Địa chỉ: Số 88 Phố Nguyễn Văn Trỗi, Phương Liệt, Hà Nội",
       "quantity": "10000",
       "registration_number": "1111-2026/CXBIPH/2-103/HN",
       "self_published": "",
-      "stt": "1",
+      "stt": "3",
       "title": "Có thứ muốn ăn thịt tôi 4",
       "translator": "Trần Yang"
     },
@@ -19,7 +41,7 @@
       "quantity": "10000",
       "registration_number": "1111-2026/CXBIPH/1-103/HN",
       "self_published": "",
-      "stt": "2",
+      "stt": "4",
       "title": "Có thứ muốn ăn thịt tôi 3",
       "translator": "Trần Yang"
     },
@@ -30,7 +52,7 @@
       "quantity": "10000",
       "registration_number": "4607-2025/CXBIPH/2-349/HN",
       "self_published": "",
-      "stt": "3",
+      "stt": "5",
       "title": "Có thứ muốn ăn thịt tôi 5",
       "translator": "Trần Yang"
     },
@@ -41,7 +63,7 @@
       "quantity": "10000",
       "registration_number": "4607-2025/CXBIPH/1-349/HN",
       "self_published": "",
-      "stt": "4",
+      "stt": "6",
       "title": "Có thứ muốn ăn thịt tôi 2",
       "translator": "Trần Yang"
     },
@@ -52,7 +74,7 @@
       "quantity": "10000",
       "registration_number": "3684-2025/CXBIPH/32-152/VH",
       "self_published": "",
-      "stt": "5",
+      "stt": "7",
       "title": "Có thứ muốn ăn thịt tôi 10",
       "translator": "Trần Yang"
     },
@@ -63,7 +85,7 @@
       "quantity": "10000",
       "registration_number": "3291-2025/CXBIPH/14-278/HN",
       "self_published": "",
-      "stt": "6",
+      "stt": "8",
       "title": "Có thứ muốn ăn thịt tôi 10",
       "translator": "Trần Yang"
     },
@@ -74,7 +96,7 @@
       "quantity": "10000",
       "registration_number": "1347-2025/CXBIPH/7-127/HN",
       "self_published": "",
-      "stt": "7",
+      "stt": "9",
       "title": "Có thứ muốn ăn thịt tôi 1",
       "translator": "Trần Yang"
     },
@@ -85,30 +107,8 @@
       "quantity": "10000",
       "registration_number": "349-2025/CXBIPH/3-30/HN",
       "self_published": "",
-      "stt": "8",
-      "title": "Có thứ muốn ăn thịt tôi 9",
-      "translator": "Trần Yang"
-    },
-    {
-      "author": "Naekawa Sai",
-      "isbn": "978-604-44-4612-7",
-      "partner": "Công ty CP Xuất bản và Truyền thông IPM - Số 110 Nguyễn Ngọc Nại, Thanh Xuân, Hà Nội",
-      "quantity": "10000",
-      "registration_number": "349-2025/CXBIPH/2-30/HN",
-      "self_published": "",
-      "stt": "9",
-      "title": "Có thứ muốn ăn thịt tôi 8",
-      "translator": "Trần Yang"
-    },
-    {
-      "author": "Naekawa Sai",
-      "isbn": "978-604-44-3903-7",
-      "partner": "Công ty CP Xuất bản và Truyền thông IPM - Địa chỉ: Số 110 Nguyễn Ngọc Nại, Thanh Xuân, Hà Nội",
-      "quantity": "10000",
-      "registration_number": "149-2025/CXBIPH/11-10/HN",
-      "self_published": "",
       "stt": "10",
-      "title": "Có thứ muốn ăn thịt tôi 7",
+      "title": "Có thứ muốn ăn thịt tôi 9",
       "translator": "Trần Yang"
     }
   ]
